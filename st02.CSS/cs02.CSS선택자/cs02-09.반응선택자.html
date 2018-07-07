@@ -3,6 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>CSS3 반응 선택자</title>
+    <style type="text/css">
+        h1:hover { color: red; }
+       /* a 태그에 hover, visited, link 를 설정하시오.*/
+        a:active  { color: blue; background-color: green;}
+        a:hover   { color: red; background-color: yellow;}
+        a:visited { color: pink; }
+        a:link    { color: orange; }
+
+        /* input 태그에 checked가 설정되면 테두리 (border, outer)를 만드시오.*/
+        input:checked  { outline: 1px solid black; }
+        /* input 태그에 disabled가 설정되면 배경색이 회색이 되도록 만드시오.*/
+        input:disabled { background-color: gray; }
+    </style>
 </head>
 <body>
     <h1>반응 선택자</h1>
@@ -10,11 +23,11 @@
     <h1>반응 선택자</h1>
     <hr>
     <a href="http://" target="_blank">naver</a>
-    <a href="http://" target="_blank">naver</a>
-    <a href="http://" target="_blank">naver</a>
+    <a href="http://" target="_blank">daum</a>
+    <a href="http://" target="_blank">google</a>
     <hr>
-    <input type="" name="" />
-    <input type="" name="" />
-    <input type="" name="" />
+    <input type="text" name="" />
+    <input type="checkbox" name="checked" />
+    <input type="text" name="disabled" />
 </body>
-</html>
+</html>
