@@ -3,6 +3,24 @@
 <head>
     <meta charset="utf-8">
     <title>HTML5 Basic Page</title>
+    
+    <style type="text/css">
+
+       h2 {font-weight: lighter;
+           font-size: 15px;}
+
+        #main-navigation { width:calc(100%-100);}
+
+
+        .outer-menu > li {display: inline-block;  
+            width: 100px;}
+        .pull-right {display: inline-block;
+                     float: right;}
+
+        #content { clear: both; }
+    </style>
+
+
 </head>
 <body>
     <div id="page-wrapper">
@@ -12,36 +30,20 @@
                 <h2 class="master-description">한빛아카데미</h2>
             </hgroup>
         </header>
+
+        <hr>
+
         <nav id="main-navigation">
             <div class="pull-left">
                 <ul class="outer-menu">
                     <li class="outer-menu-item">
                         <span class="menu-title">HTML5</span>
-                        <ul class="inner-menu">
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                        </ul>
                     </li>
                     <li class="outer-menu-item">
                         <span class="menu-title">CSS3</span>
-                        <ul class="inner-menu">
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                        </ul>
                     </li>
                     <li class="outer-menu-item">
                         <span class="menu-title">JavaScript</span>
-                        <ul class="inner-menu">
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                        </ul>
                     </li>
                 </ul>
             </div>
@@ -54,6 +56,9 @@
                 </div>
             </div>
         </nav>
+
+        <hr>
+
         <div id="content">
             <section id="main-section">
                 <article>
@@ -93,12 +98,16 @@
                 </div>
             </aside>
         </div>
+
+        <hr>
+
         <footer id="main-footer">
             <a href="#">Created By Team-HeXagon</a>
         </footer>
     </div>
 </body>
-</html>
+</html>
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>
     $(document).ready(function () {

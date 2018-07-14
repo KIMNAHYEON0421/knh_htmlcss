@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>display 속성</title>
+    <style type="text/css">
+    	/* block 태그를 inline 태그로 변환 : display */
+    	* { margin: 0; padding: 0;}
+
+    	ul > li { display: inline-block; 
+    			  background-color: red;
+    			  padding: 15px;
+    			  margin-left: : -6px; }
+
+    	/* 짝수에 배경색 지정 */
+    	ul > li:nth-child( even ) { background-color: green; }
+
+    	/* 반지름 주기 */
+    	ul > li:first-child { border-radius: 10px 0 0 10px; }
+    	ul > li:list-child { border-radius: 0 10px 10px 0; }
+
+    </style>
+
+</head>
+<body>
+    <ul>
+    	<li>1번째</li><li>2번째</li><li>3번째</li>
+    	<li>4번째</li>
+    	<li>5번째</li>
+    	<li>6번째</li>
+    	<li>7번째</li>
+    	<li>8번째</li>
+    </ul>
+</body>
+</html>

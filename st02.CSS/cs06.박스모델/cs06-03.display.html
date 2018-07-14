@@ -3,6 +3,40 @@
     <head>
         <meta charset="utf-8">
         <title>display 속성</title>
+
+        <style type="text/css">
+            
+            #inlineblock {
+                background-color: #2F78C5; 
+                width: 1000px;
+                height: 80px;
+                display: inline-block;}
+            body { clear: both; }
+            body nav { 
+                float: left;
+                margin-top: 12px; }
+            body nav ul li { display: inline-block;}
+            body nav ul li a { 
+                color: #FFFFFF;
+                margin: 0 20px; }
+
+
+            #inline { border:1px solid #000000;
+                      padding: 10px;
+                      display: inline-block;
+                            }
+            #block  { border:1px solid #000000;
+                     width: 248px; 
+                     height: auto;
+                     padding: 10px;
+                    float: right;
+                            }
+            #block img { display: block; }      
+            body {clear: both;}        
+            
+
+        </style>
+
     </head>
     <body>
         <h2>display 속성</h2>
@@ -29,4 +63,4 @@
             <img src="../images/pic3.jpg">
         </div>
     </body>
-</html>
+</html>
