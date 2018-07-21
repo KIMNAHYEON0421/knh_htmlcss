@@ -3,6 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>레이아웃 B</title>
+    <style type="text/css">
+        #sidebar { 
+                border: 0px;
+                background-color: #FF8F8F;
+                display: inline-block;
+                width: 200px;
+                height: 150px; 
+                float: left;}
+        #header { 
+                border:0px;
+                background-color:#AFD786;  }
+        #content { 
+                border:0px;
+                background-color:#DDA9E4; }
+        #footer { 
+                border:0px;
+                background-color:#DC98A4; }
+        #header, #content, #footer { 
+                width:200px;
+                height: 50px; }
+        header {float: left;}
+        
+    </style>
 </head>
 
 <body>
@@ -12,7 +35,7 @@
         <div id="sidebar">
             sidebar
         </div>
-
+        <header>
         <div id="header">
             header
         </div>
@@ -20,11 +43,11 @@
         <div id="content">
             content
         </div>
-
         <div id="footer">
             footer
         </div>
+        </header>
     </div>
 </body>
 
-</html>
+</html>

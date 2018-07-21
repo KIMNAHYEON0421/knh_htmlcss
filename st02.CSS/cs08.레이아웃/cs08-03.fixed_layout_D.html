@@ -3,6 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>레이아웃 C1</title>
+    <style type="text/css">
+        #wrap > div { 
+                display: table;
+                width: 100%;
+        }
+        #header { 
+                border:0px;
+                background-color:#AFD786; 
+                height: 50px; }
+        #leftbar { 
+                border:0px;
+                background-color:#FF8F8F; 
+                display: inline-block; 
+                width: 25%;
+                height: 50px; 
+                display: inline-block; }
+        #content { 
+                border:0px;
+                background-color:#DDA9E4;
+                width: 50%;
+                height: 50px;
+                display: inline-block; }
+        #rightbar { 
+                border:0px;
+                background-color:#FF8F8F;
+                width: 25%;
+                height: 50px;
+                display: inline-block; }
+        #footer { 
+                border:0px;
+                background-color:#DC98A4; 
+                height: 50px;
+                }
+    </style>
 </head>
 
 <body>
@@ -12,7 +46,7 @@
         <div id="header">
             header
         </div>
-
+    <div>
         <div id="leftbar">
             leftbar
         </div>
@@ -24,7 +58,7 @@
         <div id="rightbar">
             rightbar
         </div>
-
+    </div>
         <div id="footer">
             footer
         </div>
@@ -32,4 +66,4 @@
 
 </body>
 
-</html>
+</html>

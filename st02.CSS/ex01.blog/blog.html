@@ -5,19 +5,47 @@
     <title>HTML5 Basic Page</title>
     
     <style type="text/css">
+    *{ padding: 0 0 0 0; margin: 0px;}
 
        h2 {font-weight: lighter;
            font-size: 15px;}
 
-        #main-navigation { width:calc(100%-100);}
+        #main-navigation { width: calc( 100% - 100 );}
 
 
-        .outer-menu > li {display: inline-block;  
-            width: 100px;}
+        .outer-menu > li {
+            display: inline-block;  
+            width: 100px;
+            line-height: 40px; }
+        .pull-left { float: left; }
         .pull-right {display: inline-block;
                      float: right;}
 
         #content { clear: both; }
+
+        .search-bar {
+                    height: 26px;
+                    padding: 7px;
+                }
+
+        .input-search { 
+                    border-radius: 15px 0px 0px 15px;
+                    width: 120px;
+                    height: 24px;
+                    color: #555555; 
+                    border:1px solid #cccccc;
+                    float: left;
+                    outline: 0;
+                    padding: 0 0 0 15px; }
+
+        .input-search-submit { 
+                    border-radius: 0px 15px 15px 0px;
+                    margin: 0 0 0 -6px;
+                    width: 50px;
+                    height: 26px;
+                    border: 1px solid #cccccc;
+                    outline: 0; }
+        hr { clear: both; }
     </style>
 
 
