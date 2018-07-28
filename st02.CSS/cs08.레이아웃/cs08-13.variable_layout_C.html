@@ -3,6 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>가변 레이아웃 C</title>
+    <style type="text/css">
+        
+        html, body { height: 100%; }
+
+        #wrap { height: 100%; }
+        #header { 
+            height: 100px;
+            width: 100%;
+            background-color: #87DC65;
+             }
+
+        #wrapbody { 
+            height: calc( 100% - 200px );
+            width: 100%; }    
+
+        #leftbar { 
+            height: 100%;
+            width: 200px;
+            float: left;
+            background-color: #FF9797;
+             }
+        #content { 
+            height: 100%;
+            width: calc( 100% - 200px );
+            float: right;
+            background-color: #CBA6D1; }
+
+        #footer { 
+            height: 100px;
+            width: 100%;
+            background-color: #BF8282;
+            clear: both; }
+    </style>
 </head>
 
 <body>
@@ -30,4 +63,4 @@
     </div>
 
 </body>
-</html>
+</html>

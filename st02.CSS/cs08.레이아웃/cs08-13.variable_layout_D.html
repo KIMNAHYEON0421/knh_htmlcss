@@ -3,6 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>가변 레이아웃 D</title>
+    <style type="text/css">
+    
+        html, body { height: 100%; }
+        
+        #wrap { width: 100%;
+                height: 100% }
+        #header { 
+            width: 100%;
+            height: 100px;
+            background-color: #B6E98A; }
+
+        #wrapbody { width: 100%;
+            height: calc( 100% - 200px );
+             }
+        #leftbar { 
+            width: 200px;
+            height: 100%;
+            background-color: #FF9696;
+            float: left; }
+        #content { 
+            width: calc( 100% - 400px );
+            height: 100%;
+            background-color: #DEAFE3;
+            float: left; }
+        #rightbar { 
+            width: 200px;
+            height: 100%;
+            background-color: #FF9696;
+            float: left; }
+
+        #footer { width: 100%;
+            height: 100px;
+            background-color: #C07676;
+            clear: both; }
+
+    </style>
 </head>
 
 <body>
@@ -13,6 +49,7 @@
             header
         </div>
 
+    <div id="wrapbody">
         <div id="leftbar">
             leftbar
         </div>
@@ -24,6 +61,7 @@
         <div id="rightbar">
             rightbar
         </div>
+    </div>
 
         <div id="footer">
             footer
@@ -31,4 +69,4 @@
     </div>
 
 </body>
-</html>
+</html>

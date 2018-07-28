@@ -3,15 +3,132 @@
   <head>
     <meta charset="utf-8">
     <title>Starbuzz Coffee</title>
+
+    <style type="text/css">
+    * { margin: 0; padding: 0; }
+
+    html, body { height: 100%; }
+
+      a:link { 
+        color: #D77C7C;
+        font-weight: bold; }
+
+      #header { 
+        width: calc( 100% - 16px ); 
+        height: 100px;
+        background-color: #807053;
+        border: 8px solid #B3965D; }
+      #headerSlogan { 
+        color: #FFFFFF;
+        text-align: right;
+        float: right; }
+
+      #award { position: absolute;
+               left: 50%;
+               top: 20px; }
+
+      #tableContainer { 
+        height: calc( 100% - 116px - 76px );
+         }
+      #tableContainer > #tableRow { 
+        height: 100%;
+         }
+
+      #drinks { 
+        width: 180px;
+        height: 100%;
+        background-color: #EEDC9B;
+        float: left;
+        border-left: 8px solid #B3965D;
+        border-right:8px solid #B3965D;
+        padding: 10px;
+        background-image: url(./images/background.gif) }
+      #drinks > h1 { 
+        font-size: 20px;
+        font-family: serif;
+        font-weight: bold;
+        line-height: 50px;
+        color: #C10909; }
+      #drinks > p { 
+        font-size: 15px;
+        font-family: serif;
+        line-height: 30px;
+        color: ##000000; }
+      #main { 
+        width: calc( 100% - 430px - 32px - 60px );
+        height: 100%;
+        background-color: #EEDC9B;
+        float: left;
+        padding: 10px;
+        background-image: url(./images/background.gif)
+         }
+      #main > h1 { 
+        font-size: 20px;
+        font-family: serif;
+        font-weight: bold;
+        line-height: 50px;
+        color: #C10909; }
+      #main > p { 
+        font-size: 15px;
+        font-family: serif;
+        line-height: 15px;
+        color: ##000000; }
+
+      #sidebar { 
+        width: 250px;
+        height: 100%;
+        background-color: #EEDC9B;
+        float: left;
+        border-left: 8px solid #B3965D;
+        border-right:8px solid #B3965D;
+        padding: 10px;
+        background-image: url(./images/background.gif) }
+
+      #sidebar > .beanheading { 
+        font-size: 15px;
+        font-family: serif;
+        font-weight: bold;
+        line-height: 22px;
+        text-align: center; }
+      #sidebar > .beanheading > .slogan { 
+        font-weight: bold;
+        line-height: 25px;
+        color: #B36464; }
+      #sidebar > p { 
+        font-size: 12px;
+        font-family: serif;
+        line-height: 20px;
+         }
+
+      #coupon { 
+        position: absolute;
+        left: -60px;
+        top: 40%; }
+
+      #footer { 
+        width: calc( 100% - 16px );
+        height: 60px;
+        background-color: #807053;
+        border: 8px solid #B3965D;
+        font-size: 13px;
+        text-align: center;
+        color: #FFFFFF;
+        clear: both;
+         }
+
+
+
+    </style>
+
   </head>
 
-  <body>
+  <body> 
     <div id="header">
       <img id="headerLogo"
            src="images/headerLogo.gif" alt="Starbuzz Coffee logo image">
       <img id="headerSlogan"
            src="images/headerSlogan.gif" alt="Providing all the caffeine you need to power your life.">
-    </div>
+    </div> 
 
 	<div id="award">
 		<img src="images/award.gif"
@@ -38,6 +155,7 @@
 			<p>Chai Chiller, $2.99</p>
 			<p>Black Brain Brew, $2.99</p>
 	</div>
+
     <div id="main">
       <h1>QUALITY COFFEE, QUALITY CAFFEINE</h1>
       <p>
@@ -123,4 +241,4 @@
     </div>
 
   </body>
-</html>
+</html>
